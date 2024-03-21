@@ -1,0 +1,39 @@
+/* Footer.module.css */
+
+.footer {
+ background-color: #333;
+ color: #fff;
+ padding: 10px 5px;
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+}
+
+.footerContainer {
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ height: 7rem;
+}
+
+.footerColumn {
+ width: 30%;
+}
+
+.footerColumn h4 {
+ margin-bottom: 5px;
+}
+
+.footerColumn ul {
+ list-style: none;
+ padding: 0;
+}
+
+.footerColumn ul li {
+ margin-bottom: 5px;
+}
+
+.bottomBar {
+ text-align: center;
+ margin-top: 5px;
+}

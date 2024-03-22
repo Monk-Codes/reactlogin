@@ -1,0 +1,11 @@
+.aboutContainer {
+ padding: 20px;
+}
+
+.aboutContainer h1 {
+ color: #333;
+}
+
+.aboutContainer p {
+ color: #666;
+}

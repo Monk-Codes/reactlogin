@@ -1,0 +1,11 @@
+.contactContainer {
+ padding: 20px;
+}
+
+.contactContainer h1 {
+ color: #333;
+}
+
+.contactContainer p {
+ color: #666;
+}

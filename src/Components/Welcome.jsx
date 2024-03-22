@@ -13,7 +13,6 @@ export default function Welcome() {
  return (
   <div className={styles.welcomeContainer}>
    <h1 className={styles.welcomeHeading}>Welcome</h1>
-   <p className={styles.welcomeText}>This is a simple login page</p>
    <hr className={styles.welcomeHr} />
    <button className={styles.loginButton} onClick={handleClick}>
     Login

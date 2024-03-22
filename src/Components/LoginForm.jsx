@@ -25,28 +25,13 @@ export default function LoginForm() {
  return (
   <div className={styles.loginFormContainer}>
    {" "}
-   {/* Apply CSS class */}
    <h2>Login</h2>
    <form onSubmit={login}>
-    <input
-     type="text"
-     name="Username"
-     placeholder="Username"
-     value={username}
-     onChange={(e) => setUsername(e.target.value)}
-     className={styles.inputField} // Apply CSS class
-    />
-    <input
-     type="password"
-     name="Password"
-     placeholder="Password"
-     value={password}
-     onChange={(e) => setPassword(e.target.value)}
-     className={styles.inputField} // Apply CSS class
-    />
-    <input type="submit" value="Login" className={styles.submitButton} /> {/* Apply CSS class */}
+    <input type="text" name="Username" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} className={styles.inputField} />
+    <input type="password" name="Password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} className={styles.inputField} />
+    <input type="submit" value="Login" className={styles.submitButton} />
    </form>
-   {error && <p className={styles.errorMessage}>{error}</p>} {/* Apply CSS class */}
+   {error && <p className={styles.errorMessage}>{error}</p>}
   </div>
  );
 }

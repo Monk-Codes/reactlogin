@@ -6,15 +6,18 @@ export default function NavBar() {
  return (
   <>
    <div className={styles.navContainer}>
-    <h1 className={styles.navHeading}>Nav</h1>
-    <Link className={styles.navLink} to="/signup">
-     Signup
+    <h1 className={styles.navHeading}>MoneyManager</h1>
+    <Link className={styles.navLink} to="/">
+     Home
     </Link>
     <Link className={styles.navLink} to="/login">
      Login
     </Link>
-    <Link className={styles.navLink} to="/">
-     Home
+    <Link className={styles.navLink} to="/signup">
+     Signup
+    </Link>
+    <Link className={styles.navLink} to="/dashboard">
+     Dashboard
     </Link>
     <Link className={styles.navLink} to="/about">
      About
@@ -22,13 +25,7 @@ export default function NavBar() {
     <Link className={styles.navLink} to="/contact">
      Contact
     </Link>
-    <Link className={styles.navLink} to="/dashboard">
-     Dashboard
-    </Link>
-    <Link className={styles.navLink} to="/admin">
-     Admin
-    </Link>
-    <Link className={styles.navLink} to="/logout">
+    <Link className={styles.navLink} to="/">
      Logout
     </Link>
    </div>

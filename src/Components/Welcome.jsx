@@ -12,7 +12,8 @@ export default function Welcome() {
 
  return (
   <div className={styles.welcomeContainer}>
-   <h1 className={styles.welcomeHeading}>Welcome</h1>
+   <h1 className={styles.welcomeHeading}>Welcome To Expense Manager</h1>
+   <p className={styles.welcomeText}>You need only one app that helps you keep track of your expenses.</p>
    <hr className={styles.welcomeHr} />
    <button className={styles.loginButton} onClick={handleClick}>
     Login

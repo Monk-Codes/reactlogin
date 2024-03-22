@@ -1,34 +1,52 @@
-import { useState } from "react";
+// LoginForm.js
+
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import styles from "./LoginForm.module.css"; // Import CSS module
 
 export default function LoginForm() {
  const [username, setUsername] = useState("");
  const [password, setPassword] = useState("");
  const [error, setError] = useState("");
- const navigate = useNavigate(); // Initialize useNavigate hook
+ const navigate = useNavigate();
 
  const login = (e) => {
-  setError("");
-  // Your login logic here
-
-  // After successful login, redirect to signup page
-  navigate("/signup");
- };
-
- const loginFormHandler = (e) => {
   e.preventDefault();
-  login();
+  setError(""); // Reset any previous error message
+  // Perform login logic here, for example, validating credentials
+  if (username === "admin" && password === "admin") {
+   // Simulating successful login
+   navigate("/dashboard"); // Redirect to dashboard page
+  } else {
+   setError("Invalid username or password"); // Set error message
+  }
  };
 
  return (
-  <div>
+  <div className={styles.loginFormContainer}>
+   {" "}
+   {/* Apply CSS class */}
    <h2>Login</h2>
-   <form onSubmit={loginFormHandler}>
-    <input type="text" name="Username" placeholder="Username" id="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
-    <input type="password" name="Password" placeholder="Password" id="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-    <input type="submit" value="Login" />
+   <form onSubmit={login}>
+    <input
+     type="text"
+     name="Username"
+     placeholder="Username"
+     value={username}
+     onChange={(e) => setUsername(e.target.value)}
+     className={styles.inputField} // Apply CSS class
+    />
+    <input
+     type="password"
+     name="Password"
+     placeholder="Password"
+     value={password}
+     onChange={(e) => setPassword(e.target.value)}
+     className={styles.inputField} // Apply CSS class
+    />
+    <input type="submit" value="Login" className={styles.submitButton} /> {/* Apply CSS class */}
    </form>
-   {error && <p>{error}</p>}
+   {error && <p className={styles.errorMessage}>{error}</p>} {/* Apply CSS class */}
   </div>
  );
 }

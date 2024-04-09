@@ -5,7 +5,7 @@ const About = () => {
  return (
   <div className={styles.aboutContainer}>
    <h1>About Us</h1>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac justo at nunc feugiat rutrum.</p>
+   <p>Monk-codes are one of the top service providers in India</p>
   </div>
  );
 };

@@ -5,8 +5,14 @@ const Contact = () => {
  return (
   <div className={styles.contactContainer}>
    <h1>Contact Us</h1>
-   <p>Email: example@example.com</p>
-   <p>Phone: +1 234 567 890</p>
+   <p>
+    <span>Mail: </span>
+    <a href="mailto:monkcodesdev@gmail.com">monkcodesdev@gmail.com</a>
+   </p>
+   <p>
+    <span>Phone: </span>
+    +91 8961894629
+   </p>
   </div>
  );
 };

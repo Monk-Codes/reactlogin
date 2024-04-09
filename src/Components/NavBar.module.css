@@ -29,3 +29,18 @@
  text-decoration: none;
  font-weight: bold;
 }
+@media (max-width: 600px) {
+ .navContainer {
+  padding: 10px 0;
+ }
+ .navHeading {
+  font-size: 1.2rem;
+ }
+ .navLink {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-right: 3px;
+  border-radius: 4px;
+  border: 0.5px solid #555;
+ }
+}

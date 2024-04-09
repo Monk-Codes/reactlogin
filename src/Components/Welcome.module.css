@@ -62,3 +62,18 @@
  background-color: #b2070d9b;
  transform: scaleX(1.1);
 }
+@media (max-width: 600px) {
+ .welcomeContainer {
+  height: calc(100dvh - 80px);
+  margin: 40px auto 0;
+ }
+ .welcomeHeading {
+  font-size: 2rem;
+ }
+ .welcomeText {
+  font-size: 1rem;
+ }
+ .loginButton {
+  font-size: 0.8rem;
+ }
+}

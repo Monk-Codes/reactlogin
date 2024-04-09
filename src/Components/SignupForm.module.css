@@ -42,3 +42,9 @@
 .signupFormContainer input[type="submit"]:hover {
  background-color: #0056b3;
 }
+@media (max-width: 600px) {
+ .signupFormContainer {
+  height: calc(100dvh - 80px);
+  margin: 40px auto 0;
+ }
+}
